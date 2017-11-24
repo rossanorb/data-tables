@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+</head>
+<body>
+<table id="my-table" class="display">
+</table>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript">
+    var data = [
+        [
+            "Davis Maxwell",
+            "2117",
+            "Ap #291-204 Turpis. Street",
+            "Starachowice",
+            "Swiętokrzyskie"
+        ],
+        [
+            "Zachary B. Albert",
+            "78416",
+            "Ap #982-7303 Vehicula. Rd.",
+            "Flawinne",
+            "NA"
+        ],
+        [
+            "Harlan Nolan",
+            "9416",
+            "5298 Feugiat Av.",
+            "Kanpur Cantonment",
+            "UP"
+        ],
+        [
+            "Craig Z. Richmond",
+            "7245",
+            "8823 Mollis. St.",
+            "Gontrode",
+            "OV"
+        ],
+        [
+            "Kyla E. Powers",
+            "16-818",
+            "Ap #216-1458 Et, St.",
+            "Märsta",
+            "AB"
+        ],
+        [
+            "Sacha N. Hampton",
+            "66224",
+            "955-6894 Quisque Ave",
+            "Otukpo",
+            "BE"
+        ],
+        [
+            "Steel S. Singleton",
+            "600626",
+            "2012 Dapibus Road",
+            "Shepparton",
+            "VIC"
+        ],
+        [
+            "Cecilia Osborne",
+            "43231",
+            "254-8310 Non, Rd.",
+            "El Monte",
+            "RM"
+        ],
+        [
+            "Jolene Chaney",
+            "31003",
+            "P.O. Box 748, 4669 Dui, Rd.",
+            "Mobile",
+            "Alabama"
+        ],
+        [
+            "Deanna Bradshaw",
+            "6149",
+            "8711 Fusce Rd.",
+            "Mustafakemalpaşa",
+            "Bursa"
+        ],
+        [
+            "Alice R. Lane",
+            "E2K 1L7",
+            "Ap #995-7190 Risus. Rd.",
+            "Calle Blancos",
+            "SJ"
+        ],
+        [
+            "Hadassah M. Hurley",
+            "17222",
+            "Ap #162-3772 Phasellus Street",
+            "Redcliffe",
+            "QLD"
+        ],
+        [
+            "Barbara Boyer",
+            "711152",
+            "7938 Sit Av.",
+            "Whangarei",
+            "NI"
+        ],
+        [
+            "Eagan Guerra",
+            "6159",
+            "3752 Sit St.",
+            "Reus",
+            "CA"
+        ],
+        [
+            "Donna Bonner",
+            "1018",
+            "P.O. Box 389, 1311 Quam Road",
+            "Ficarolo",
+            "Veneto"
+        ],
+        [
+            "Carla Graves",
+            "50625",
+            "9713 Proin St.",
+            "Palma de Mallorca",
+            "BA"
+        ],
+        [
+            "Gavin Kelley",
+            "M4G 8M3",
+            "P.O. Box 240, 973 Dui. Rd.",
+            "Nevers",
+            "BO"
+        ],
+        [
+            "Ali N. Salas",
+            "20517",
+            "P.O. Box 935, 4878 Convallis Street",
+            "Lower Hutt",
+            "NI"
+        ],
+        [
+            "Baxter U. Graham",
+            "26005",
+            "P.O. Box 128, 8496 Aliquet Street",
+            "Zaltbommel",
+            "Gelderland"
+        ],
+        [
+            "Brady Clay",
+            "0243 HM",
+            "Ap #538-7293 Vel, St.",
+            "Vienna",
+            "Wie"
+        ],
+        [
+            "Ignatius Compton",
+            "14438",
+            "241-4447 Nulla Avenue",
+            "Sannazzaro de' Burgondi",
+            "Lombardia"
+        ],
+        [
+            "Sage J. Jackson",
+            "2014 UN",
+            "1313 Maecenas Rd.",
+            "Leganés",
+            "MA"
+        ],
+        [
+            "Giacomo Newman",
+            "19948",
+            "5864 Ut Road",
+            "Fort Smith",
+            "Arkansas"
+        ],
+        [
+            "Carissa Bright",
+            "97111",
+            "Ap #692-502 Sem St.",
+            "Tucson",
+            "Arizona"
+        ],
+        [
+            "Hyatt B. Hamilton",
+            "6272 GY",
+            "514-4258 Ante Road",
+            "Ipatinga",
+            "Minas Gerais"
+        ],
+        [
+            "Amity J. Vang",
+            "14601",
+            "Ap #597-9867 Amet Road",
+            "Columbus",
+            "Georgia"
+        ],
+        [
+            "Hilda L. Padilla",
+            "68857",
+            "P.O. Box 463, 6936 Interdum St.",
+            "Fermont",
+            "Quebec"
+        ],
+        [
+            "Keane B. Nolan",
+            "69567",
+            "Ap #551-8728 Eget Rd.",
+            "Enschede",
+            "Overijssel"
+        ],
+        [
+            "Nadine D. Coffey",
+            "92494",
+            "P.O. Box 123, 737 Cras Road",
+            "Stockholm",
+            "Stockholms län"
+        ],
+        [
+            "Ethan R. Richards",
+            "13548",
+            "Ap #655-6820 Purus. Av.",
+            "Victor Harbor",
+            "South Australia"
+        ],
+        [
+            "Michael F. Jefferson",
+            "22915",
+            "P.O. Box 819, 3691 Mauris Rd.",
+            "Roubaix",
+            "NO"
+        ],
+        [
+            "Price F. Macias",
+            "7408",
+            "Ap #448-5602 Vitae Street",
+            "Dublin",
+            "L"
+        ],
+        [
+            "Barbara Schroeder",
+            "79813",
+            "Ap #314-1586 Ligula. St.",
+            "Veere",
+            "Zeeland"
+        ],
+        [
+            "Keith W. Clay",
+            "7498 HD",
+            "9069 Est St.",
+            "Kingston",
+            "Ontario"
+        ],
+        [
+            "John Cohen",
+            "44678",
+            "444-7859 Elementum, St.",
+            "San Giovanni la Punta",
+            "SIC"
+        ],
+        [
+            "Sara Mcpherson",
+            "577039",
+            "P.O. Box 107, 1501 Dictum Av.",
+            "Vienna",
+            "Vienna"
+        ],
+        [
+            "Denton Deleon",
+            "1724",
+            "346-8060 A, Rd.",
+            "La Roche-sur-Yon",
+            "Pays de la Loire"
+        ],
+        [
+            "Christopher Smith",
+            "9601",
+            "352-5913 Convallis, Av.",
+            "Auckland",
+            "North Island"
+        ],
+        [
+            "Colby S. Fleming",
+            "5760",
+            "1533 Dui St.",
+            "Zelzate",
+            "Oost-Vlaanderen"
+        ],
+        [
+            "Barbara Mcmahon",
+            "3780",
+            "7736 Cum St.",
+            "Belfast",
+            "U"
+        ],
+        [
+            "Abigail Pugh",
+            "B8W 2A7",
+            "3045 Sem St.",
+            "St. Asaph",
+            "Flintshire"
+        ],
+        [
+            "Kessie William",
+            "8843",
+            "Ap #497-8613 Amet, Ave",
+            "New Plymouth",
+            "North Island"
+        ],
+        [
+            "Tate Bonner",
+            "08028",
+            "7677 Malesuada Street",
+            "La Florida",
+            "RM"
+        ],
+        [
+            "Jemima Hayes",
+            "3297",
+            "P.O. Box 993, 4324 Feugiat. Rd.",
+            "Doetinchem",
+            "Gelderland"
+        ],
+        [
+            "Lee F. Bryant",
+            "5209",
+            "473-817 Nibh Street",
+            "Upplands Väsby",
+            "AB"
+        ],
+        [
+            "Colorado P. Wall",
+            "6812",
+            "6530 Dolor Rd.",
+            "Kızılcahamam",
+            "Ankara"
+        ],
+        [
+            "Dylan K. Burks",
+            "6218 CJ",
+            "Ap #360-2801 Cursus St.",
+            "Vienna",
+            "Vienna"
+        ],
+        [
+            "Jameson Y. Peterson",
+            "11545",
+            "P.O. Box 406, 6966 Aliquam Ave",
+            "Lagos",
+            "LA"
+        ],
+        [
+            "Oleg Savage",
+            "3993",
+            "533-1093 Donec St.",
+            "Vänersborg",
+            "O"
+        ],
+        [
+            "Miranda Lott",
+            "74303",
+            "Ap #129-1967 Nisi Av.",
+            "Bremerhaven",
+            "Bremen"
+        ],
+        [
+            "Bethany W. Hays",
+            "12543",
+            "Ap #221-4989 Diam. St.",
+            "Vienna",
+            "Wie"
+        ],
+        [
+            "Keith Marks",
+            "J2Z 2C4",
+            "Ap #895-1681 Nunc Av.",
+            "Belford Roxo",
+            "Rio de Janeiro"
+        ],
+        [
+            "Lucius L. Nunez",
+            "2401",
+            "Ap #212-8341 Hendrerit Av.",
+            "Vienna",
+            "Wie"
+        ],
+        [
+            "Stewart Ortega",
+            "2890 IQ",
+            "P.O. Box 156, 1076 Lectus, Street",
+            "Belfast",
+            "U"
+        ],
+        [
+            "Susan W. Macdonald",
+            "C1E 5Y0",
+            "806 Diam. Street",
+            "Stratford",
+            "Prince Edward Island"
+        ],
+        [
+            "Katell D. Tate",
+            "0350",
+            "Ap #508-7933 Nam Street",
+            "Lustenau",
+            "Vorarlberg"
+        ],
+        [
+            "Miriam Z. Fletcher",
+            "68677-737",
+            "2241 Nunc Avenue",
+            "Liverpool",
+            "New South Wales"
+        ],
+        [
+            "Gavin Stafford",
+            "38796",
+            "P.O. Box 219, 3567 Dolor, Road",
+            "Santo Stefano del Sole",
+            "CAM"
+        ],
+        [
+            "Tara R. Berger",
+            "26826",
+            "313-1911 Magna. Av.",
+            "Castlegar",
+            "BC"
+        ],
+        [
+            "Sonya Rodriguez",
+            "17785",
+            "4518 Lacinia St.",
+            "Ramara",
+            "ON"
+        ],
+        [
+            "Lunea E. Allen",
+            "5777",
+            "Ap #589-1068 Erat Avenue",
+            "Fatehpur",
+            "UP"
+        ],
+        [
+            "Beck Pope",
+            "31562",
+            "2858 Donec Avenue",
+            "Ollagüe",
+            "Antofagasta"
+        ],
+        [
+            "Malcolm Leon",
+            "09087",
+            "407-8196 Vulputate, Street",
+            "Trois-Rivi�res",
+            "QC"
+        ],
+        [
+            "Elmo Daniels",
+            "769831",
+            "7123 Aliquam Ave",
+            "Pratovecchio",
+            "TOS"
+        ],
+        [
+            "Piper Tran",
+            "551978",
+            "P.O. Box 432, 645 In, Road",
+            "Merbes-le-Ch‰teau",
+            "HE"
+        ],
+        [
+            "Kirk Hendrix",
+            "33273",
+            "833-7528 Sodales Rd.",
+            "Feilding",
+            "North Island"
+        ],
+        [
+            "Illana W. Skinner",
+            "3799",
+            "1200 Vehicula. Avenue",
+            "Grave",
+            "N."
+        ],
+        [
+            "Nolan Y. Shepard",
+            "20523",
+            "2502 Dolor Avenue",
+            "Siedlce",
+            "Mazowieckie"
+        ],
+        [
+            "Stella Stanley",
+            "63-533",
+            "Ap #238-6684 Semper St.",
+            "Gaziantep",
+            "Gaz"
+        ],
+        [
+            "Lucius G. Fleming",
+            "33179",
+            "Ap #737-811 Hendrerit Street",
+            "Limena",
+            "Veneto"
+        ],
+        [
+            "Grady Medina",
+            "33814",
+            "339-2269 Ipsum. Street",
+            "Ashburton",
+            "SI"
+        ],
+        [
+            "Harriet Ochoa",
+            "8792",
+            "580-8799 Felis St.",
+            "Cassano Spinola",
+            "PIE"
+        ],
+        [
+            "Hadley England",
+            "4109",
+            "P.O. Box 389, 9937 Libero Rd.",
+            "Pontevedra",
+            "Galicia"
+        ],
+        [
+            "Beatrice Christian",
+            "2038",
+            "P.O. Box 772, 9709 Velit Road",
+            "Estación Central",
+            "Metropolitana de Santiago"
+        ],
+        [
+            "Brady Charles",
+            "19649",
+            "P.O. Box 737, 1427 Lacinia St.",
+            "Tire",
+            "İzmir"
+        ],
+        [
+            "Martin W. Bird",
+            "978238",
+            "Ap #692-936 Vitae, Av.",
+            "Wrocław",
+            "Dolnośląskie"
+        ],
+        [
+            "Madison Cantu",
+            "96384",
+            "8684 Neque. Ave",
+            "Tampa",
+            "Florida"
+        ],
+        [
+            "Tatiana Hendricks",
+            "61447",
+            "P.O. Box 232, 415 Nulla Av.",
+            "Los Álamos",
+            "VII"
+        ],
+        [
+            "Elmo Bell",
+            "79243",
+            "Ap #567-952 Vulputate St.",
+            "Tarnów",
+            "Małopolskie"
+        ],
+        [
+            "Lee Rivera",
+            "42061",
+            "Ap #952-7569 Integer Avenue",
+            "Berlin",
+            "Berlin"
+        ],
+        [
+            "Camilla Maynard",
+            "7766",
+            "970-6240 Pellentesque St.",
+            "Criciúma",
+            "SC"
+        ],
+        [
+            "Ferris Roth",
+            "5136",
+            "Ap #547-7535 Pretium Rd.",
+            "Southampton",
+            "HA"
+        ],
+        [
+            "Sawyer B. Delaney",
+            "4270",
+            "323-1410 Dictum Av.",
+            "Jamioulx",
+            "Henegouwen"
+        ],
+        [
+            "Wing N. Mitchell",
+            "66678-999",
+            "P.O. Box 969, 663 Nam Rd.",
+            "Rangiora",
+            "South Island"
+        ],
+        [
+            "Yeo S. Bauer",
+            "40033",
+            "826-6095 In Street",
+            "Bauchi",
+            "BA"
+        ],
+        [
+            "Abdul Beard",
+            "29-323",
+            "P.O. Box 645, 5961 Magna St.",
+            "Ellesmere Port",
+            "Cheshire"
+        ],
+        [
+            "Leonard U. Chen",
+            "08431-163",
+            "9713 Pellentesque St.",
+            "Apeldoorn",
+            "Gl"
+        ],
+        [
+            "Warren Z. Greer",
+            "68934",
+            "Ap #245-1656 Mauris, Rd.",
+            "Vienna",
+            "Wie"
+        ],
+        [
+            "Paul Cross",
+            "02230-370",
+            "P.O. Box 762, 9237 Magnis Avenue",
+            "Nederokkerzeel",
+            "Vlaams-Brabant"
+        ],
+        [
+            "Rhoda Conner",
+            "4836 MZ",
+            "860-4275 Leo. Ave",
+            "Norfolk County",
+            "Ontario"
+        ],
+        [
+            "Tad Key",
+            "05-712",
+            "Ap #853-7765 Sed Ave",
+            "Lo Barnechea",
+            "Metropolitana de Santiago"
+        ],
+        [
+            "Nathan M. Callahan",
+            "24509",
+            "Ap #317-8728 Eu Ave",
+            "Berlin",
+            "BE"
+        ],
+        [
+            "Reece X. Hancock",
+            "7828",
+            "P.O. Box 494, 9124 Fusce St.",
+            "Rotorua",
+            "North Island"
+        ],
+        [
+            "Myra Rutledge",
+            "42505",
+            "259-8175 Elit. Ave",
+            "Częstochowa",
+            "Sląskie"
+        ],
+        [
+            "Rahim Hebert",
+            "30868",
+            "Ap #879-2223 Aliquam St.",
+            "Vienna",
+            "Vienna"
+        ],
+        [
+            "Cyrus Johnston",
+            "85025",
+            "390-3852 Diam. Rd.",
+            "Tierra Amarilla",
+            "Atacama"
+        ],
+        [
+            "Brett U. Walter",
+            "317126",
+            "4568 Egestas Avenue",
+            "Agen",
+            "Aquitaine"
+        ],
+        [
+            "Olivia I. Delacruz",
+            "582101",
+            "195-181 Interdum Av.",
+            "Caprino Bergamasco",
+            "LOM"
+        ],
+        [
+            "Ayanna A. Weber",
+            "SZ87 6MY",
+            "Ap #309-5557 Nunc St.",
+            "Istanbul",
+            "Istanbul"
+        ],
+        [
+            "Priscilla U. Langley",
+            "69800",
+            "P.O. Box 743, 4994 Vestibulum Ave",
+            "Regina",
+            "Saskatchewan"
+        ]
+    ];
+
+    $(document).ready(function () {
+        $('#my-table').DataTable({
+            data: data,
+            columns: [
+                {title:'Nome'},
+                {title:'CEP'},
+                {title:'Logradouro'},
+                {title:'Cidade'},
+                {title:'Estado'}
+            ]
+        });
+    });
+</script>
+</body>
+</html>
